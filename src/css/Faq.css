@@ -1,0 +1,141 @@
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 40vh;
+}
+
+.email-query {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  border-right: 1px solid #BBBBBB;
+}
+
+.email-query-title {
+  color: #333333;
+  font-size: 20px;
+  line-height: 3em;
+}
+
+.email-query > button {
+  border: 1px solid #CCCCCC;
+  background: linear-gradient(white, #E9E9E9);
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #767676;
+  cursor: pointer;
+}
+
+.email-query i {
+  padding-right: 5px;
+}
+
+.email-query-text {
+  color: #767676;
+  font-size: 15px;
+  line-height: 3.5em;
+}
+
+.direct-query {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  padding-left: 30px;
+  justify-content: center;
+}
+
+.direct-query-input {
+  border: 1px solid #7CAACF;
+  border-radius: 50px;
+  line-height: 1.8em;
+  padding-left: 10px;
+  font-size: 1em;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 0 5px #7CAACF;
+}
+
+.search-icon {
+  color: #767676;
+}
+
+.direct-query-input > input {
+  line-height: 1.5em;
+  padding-left: 10px;
+  font-size: 0.8em;
+  width: 80%;
+}
+
+.direct-query-input > input, .direct-query-input > input:focus {
+  border: 0;
+  outline: none;
+}
+
+.direct-query-file-inputs {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.file-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  height: 80px;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.file-input-container:hover {
+  background-color: #FAFAFA;
+  border: 1px solid #BBBBBB;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.file-direct-icon {
+  color: #3982BE;
+  border: 1px solid #3982BE;
+  border-radius: 50px;
+  width: 16px;
+  padding: 5px;
+  text-align: center;
+}
+
+.file-input-container:hover > .file-direct-icon {
+  color: #285982;
+  border-color: #285982;
+}
+
+.file-input-text {
+  color: #3982BE;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.file-input-container:hover > .file-input-text {
+  color: #285982;
+}
+
+/* Media Queries */
+
+@media (max-width: 935px) {
+  .faq-container {
+    height: 75vh;
+    overflow: auto;
+  }
+
+  .direct-query {
+    padding-left: 30px;
+  }
+}
+
+
